@@ -20,7 +20,7 @@ html {
 
 .sidebar {
   background-color: green;
-  grid-row: 1;
+  grid-row: 1/4;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
