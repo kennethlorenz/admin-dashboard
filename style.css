@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* sets base font size to 10px */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  font-size: 2rem;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.sidebar {
+  background-color: green;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header {
+  background-color: blue;
+  grid-column: 2/4;
+}
+
+.projects {
+  background-color: purple;
+  grid-column: 2/3;
+}
+
+.announcements {
+  background-color: aquamarine;
+  grid-column: 3/4;
+}
+
+.trendings {
+  background-color: brown;
+  grid-column: 3/4;
+}
