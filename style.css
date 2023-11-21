@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #0c4a6e;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --font-size-1: 2.3rem;
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -18,11 +23,23 @@ html {
   grid-template-columns: 1fr 2fr 1fr;
 }
 
+/* sidebar */
+
 .sidebar {
-  background-color: green;
+  background-color: var(--primary-color);
   grid-row: 1/4;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 2rem;
+}
+
+.sidebar .nav {
+  font-size: var(--font-size-1);
+  font-family: var(--primary-font);
+}
+
+.nav ul {
+  list-style: none;
 }
 
 .header {
