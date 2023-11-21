@@ -27,13 +27,26 @@ html {
 
 .sidebar {
   background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  flex: 1;
   grid-row: 1/4;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 2rem;
 }
 
-.sidebar .nav {
+.sidebar .sidebar-header {
+  font-size: var(--font-size-1);
+  gap: 1rem;
+}
+
+.sidebar .sidebar-header img {
+  width: 5.5rem;
+  filter: invert(1);
+}
+
+.sidebar .nav-1,
+.sidebar .nav-2 {
   font-size: var(--font-size-1);
   font-family: var(--primary-font);
 }
@@ -50,6 +63,7 @@ html {
 .projects {
   background-color: purple;
   grid-column: 2/3;
+  grid-row: 2/4;
 }
 
 .announcements {
