@@ -17,10 +17,14 @@ html {
   padding: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
   display: grid;
   font-size: 2rem;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
 }
 
 /* sidebar */
@@ -30,9 +34,11 @@ html {
   color: white;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 4rem;
   flex: 1;
   grid-row: 1/4;
+  padding: 2rem;
+  font-weight: bold;
 }
 
 .sidebar .sidebar-header {
@@ -45,10 +51,20 @@ html {
   filter: invert(1);
 }
 
-.sidebar .nav-1,
-.sidebar .nav-2 {
+.sidebar .sidebar-header,
+.sidebar .nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.sidebar .nav {
   font-size: var(--font-size-1);
-  font-family: var(--primary-font);
+}
+
+.sidebar .nav ul li span img {
+  filter: invert(1);
+  width: 2.5rem;
 }
 
 .nav ul {
