@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&family=Raleway:wght@300;400&family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&family=Raleway:wght@300;400&family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
     />
+
     <title>Admin Dashboard</title>
   </head>
   <body>
@@ -72,10 +73,44 @@
           </ul>
         </div>
       </div>
-      <div class="header">Header</div>
-      <div class="projects">Projects</div>
-      <div class="announcements">Announcements</div>
-      <div class="trendings">Trendings</div>
+      <div class="header">
+        <div class="top">
+          <div class="search">
+            <label for="search"
+              ><img src="./logos/magnify.svg" alt="Magnify logo"
+            /></label>
+            <input id="search" type="text" />
+          </div>
+          <div class="account">
+            <span
+              ><img
+                src="./logos/bell-ring-outline.svg"
+                alt="Notification Bell Logo"
+            /></span>
+            <span
+              ><img src="./images/profile_logo.png" alt="Profile Icon"
+            /></span>
+            <span>Kenneth General</span>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="profile">
+            <img src="./images/profile_logo.png" alt="Profile Icon" />
+            <div class="greetings">
+              <span>Hi there,</span>
+              <span>Kenneth General (@kgeneral)</span>
+            </div>
+          </div>
+          <div class="menu">
+            <button>New</button><button>Upload</button><button>Share</button>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="projects">Projects</div>
+        <div class="announcements">Announcements</div>
+        <div class="trendings">Trendings</div>
+      </div>
     </div>
   </body>
 </html>
